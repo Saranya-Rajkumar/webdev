@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Home{
+    text-align: center;
+}
+ul,li{
+    display: inline;
+    cursor:default
+}
+li:hover{
+    color: white;
+}
+.box{
+    display: inline-block;
+    width: 220px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+}
+.products{
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+.Contact{
+    text-align: center;
+    margin: 25px;
+}
+.send{
+    background-color: yellow;
+    color: black;
+    width: 30%;
+}
+.order:hover{
+color: blue;
+}
+.para{
+    line-height:1.5em;
+}
+.counter-wrapper{
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    padding: 10rem 9%;
+    margin-top: 2rem;
+    position: relative;
+}
+.counter-wrapper::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,7);
+    z-index: 1;
+}
+.counter{
+    text-align: center;
+    color: #ddd;
+    z-index: 2;
+    position: relative;
+}
+.counter::before{
+    position: absolute;
+    content: "";
+    bottom: -2rem;
+    left: 50%;
+    width: 20%;
+    height: 2rem;
+    background: #&db7fe;
+    transform: translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+}
+.counter .count{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.counter p{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 768px) {
+    .counter-wrapper{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 8rem;
+    }
+}
+@media (max-width: 450px) {
+    html{
+        font-size: 50px
+    }
+    .counter-wrapper{
+    grid-template-columns: repeat(1fr);
+
+}
+}
+.counter{
+    width: 300px;
+    height: 300px;
+    background-color:blueviolet;
+    color: white;
+    cursor:grab;
+}
+.count{
+    margin-top: 60px;
+}
+.box:hover{
+    height: 50px;
+    size: 50px;
+    border: 2px;
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+
